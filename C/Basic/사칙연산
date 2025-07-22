@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+//plus,minus,multiple,divide(double return)
+int  plus(int x, int y)
+{
+	return x + y;
+}
+int minus(int x, int y)
+{
+	return x - y;
+}
+int multuple(int x, int y)
+{
+	return x * y;
+}
+int divide(int x, int y)
+{
+	return(double)x / y;
+}
+int main()
+{
+	int a = 10, b = 20;
+	printf("plus : %d\n" , plus(a,b));
+	printf("minus : %d\n", minus(a, b));
+	printf(" multuple : %d\n", multuple(a, b));
+	printf("divide : %2.llf\n", divide(a, b));
+
+
+	return 0;
+}
