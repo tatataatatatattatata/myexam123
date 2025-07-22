@@ -14,17 +14,17 @@ int multuple(int x, int y)
 {
 	return x * y;
 }
-int divide(int x, int y)
+double divide(int x, int y)
 {
-	return(double)x / y;
+	return (double)x / y;
 }
 int main()
 {
-	int a = 10, b = 20;
+	int a = 5, b = 7;
 	printf("plus : %d\n" , plus(a,b));
 	printf("minus : %d\n", minus(a, b));
 	printf(" multuple : %d\n", multuple(a, b));
-	printf("divide : %2.llf\n", divide(a, b));
+	printf("divide : %.2llf\n", divide(a, b));
 
 
 	return 0;
