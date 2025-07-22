@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main() 
+{
+	//int numbers[9] = { 3, 29, 38, 12, 57, 74, 40, 85, 61};
+	int max = INT_MIN;
+	int cnt;
+	int numbers[9] = { 0, };
+	for (int i = 0; i < 9; i++) {
+		scanf("%d", &numbers[i]);
+	}
+
+	for (int j = 0; j < 9; j++) {
+		if (numbers[j] > max) {
+			max = numbers[j];
+			cnt = j;
+		}
+	}
+	printf("%d\n%d\n", max, cnt);
+
+	return 0;
+}
+
