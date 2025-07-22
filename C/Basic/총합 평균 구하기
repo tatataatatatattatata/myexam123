@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() 
+{
+
+	int score[3] = {0};
+	int kor = 0, eng = 0, math = 0, total = 0;
+	double avg = 0;
+
+
+
+	for (int i = 0; i < 3; i++){
+		scanf_s("%d", &score[i]);
+		total += score[i];
+	}
+
+	avg = total / 3.0;
+
+	printf("총점 :%d\n평균 :%.1lf\n", total, avg);
+
+	return 0;
+
+}
