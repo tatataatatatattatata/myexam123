@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main()
+{
+	//구구단 만들기
+	int a ;
+	printf("a값을 입력하세요 :");
+	scanf_s("%d", &a);
+
+	for (int b = 1; b <= 9; b++) {
+		printf(" % d * %d = % d\n", a, b, a * b);
+	}
+	return 0;
+}
