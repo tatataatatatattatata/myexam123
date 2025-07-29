@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int lotto[6];
+    int i = 0;
+
+    srand(time(NULL));  // 랜덤 시드
+
+    while (i < 6) {
+        int value = rand() % 45 + 1;
+        int duplicate = 0;
+
+        // 중복 검사
+        for (int j = 0; j < i; j++) {
+            if (lotto[j] == value) {
+                duplicate = 1;
+                break;
+            }
+        }
+
+        if (!duplicate) {
+            lotto[i] = value;
+            i++;
+        }
+    }
+
+    // 결과 출력
+    printf("로또 번호: ");
+    for (int k = 0; k < 6; k++) {
+        printf("%d ", lotto[k]);
+    }
+    printf("\n");
+
+    return 0;
+}
