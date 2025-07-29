@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+struct person
+{
+    int num;
+    double grade;
+};
+
+int main()
+{
+    struct person tomy;
+    tomy.num = 1;
+    tomy.grade = 4.1;
+
+    printf("토미의 번호 : %d\n", tomy.num);
+    printf("토미의 성적 : %d\n", tomy.grade);
+
+    return 0;
+}
