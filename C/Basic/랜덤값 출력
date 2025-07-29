@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+//난수발생, Random
+int main()
+{
+	srand(time(NULL));
+//seed값 설정
+// 1~10 사이값만 되도록 출력 
+	for (int i = 0; i < 1000; i++)
+	{
+		int value = rand() % 10;
+		printf("%d		", value);
+	}
+
+	return 0;
+}
